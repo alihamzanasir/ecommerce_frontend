@@ -1,11 +1,8 @@
-import React from 'react'
+import { InputProps } from "antd";
+import { CustomStyled } from "./style";
 
-const CustomInput = () => {
-  return (
-    <div>
-      
-    </div>
-  )
-}
+const CustomInput = ({ ...props }: InputProps) => {
+  return <CustomStyled {...props} />;
+};
 
-export default CustomInput
+export default CustomInput;

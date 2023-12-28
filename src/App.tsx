@@ -1,8 +1,9 @@
+import Card from "./componenets/@commonComponent/card";
 
 function App() {
   return (
-    <div>
-      <h1>Hello world</h1>
+    <div style={{ marginTop: "5rem", marginLeft: "4rem" }}>
+      <Card />
     </div>
   );
 }
