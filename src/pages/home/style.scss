@@ -1,0 +1,30 @@
+.main {
+  display: flex;
+  background: #b76dca;
+  .img-container {
+    width: 60%;
+    height: 700px;
+  }
+}
+
+///////////////// categories style /////////////////
+.categories {
+  display: flex;
+  justify-content: space-between;
+  padding: 0px 2rem 0px 2rem;
+  font-size: 18px;
+  background: gray;
+
+  .categories-item {
+    padding: 20px;
+    cursor: pointer;
+    &:hover {
+      background: #3e3e3e;
+    }
+  }
+}
+
+.card_section {
+  display: flex;
+  flex-wrap: wrap;
+}

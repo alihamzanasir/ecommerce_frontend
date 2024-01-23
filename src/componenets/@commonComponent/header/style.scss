@@ -1,0 +1,40 @@
+.header_section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 2rem 0px 2rem;
+  background: #636363;
+  color: white;
+}
+
+.list {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.signin_shop {
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+  font-size: 20px;
+}
+
+.search_bar_div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 45px;
+  width: fit-content;
+  .input {
+    height: 100%;
+    outline: none;
+    border-radius: 0%;
+  }
+  .btn {
+    height: 100%;
+    border-radius: 0%;
+  }
+}
