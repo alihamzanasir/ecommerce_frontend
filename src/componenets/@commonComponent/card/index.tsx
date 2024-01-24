@@ -1,5 +1,5 @@
 import "./style.scss";
-import { Rate } from "antd";
+import Rating from "@mui/material/Rating";
 const Card = () => {
   return (
     <div className="Card">
@@ -13,15 +13,16 @@ const Card = () => {
       <div className="discription">
         Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ad, sequi.
       </div>
-      <Rate className="rating" allowHalf defaultValue={2.5} />
+      <Rating name="read-only" value={2} readOnly />
       <div className="flexDiv">
         Colors:
         {Array.from({ length: 3 }, () => (
           <div className="colors"></div>
         ))}
       </div>
-      <div className="price">PKR:400$
-      <span className="previous-price">PKR:600$</span>
+      <div className="price">
+        PKR:400$
+        <span className="previous-price">PKR:600$</span>
       </div>
     </div>
   );

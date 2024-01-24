@@ -1,23 +1,36 @@
-import { useEffect } from "react";
-import Card from "./componenets/@commonComponent/card";
-import { HomeApi } from "./@api";
+import Home from "./pages/home";
 import { useDispatch, useSelector } from "react-redux";
-import { store } from "./store/store";
-import { fetchUserById } from "./store/reducer/homeReducer";
-
+import { loginApi } from "./store/reducer/authReducer";
+import { gql, useQuery } from "@apollo/client";
+import { useEffect } from "react";
+import Header from "./componenets/@commonComponent/header";
 function App() {
-  const { homeAPi }: any = useSelector((state) => state);
+  const GET_LOCATIONS = gql`
+    query GetUserByID($id: ID!, $token: String!) {
+      getUserByID(id: $id) {
+        userId
+        title
+        body
+      }
+      getToken(token: $token) {
+        name
+      }
+    }
+  `;
   const dispatch = useDispatch<any>();
   useEffect(() => {
-    dispatch(fetchUserById());
+    dispatch(loginApi());
   }, []);
-  console.log(homeAPi);
 
-  return (
-    <div style={{ marginTop: "5rem", marginLeft: "4rem" }}>
-      <Card />
-    </div>
-  );
+  const { authReducer }: any = useSelector((state) => state);
+  const { authData } = authReducer;
+  console.log(authData);
+
+  const { loading, error, data } = useQuery(GET_LOCATIONS, {
+    variables: { id: "1", token: "skndfklnskl" },
+  });
+
+  return <Home />;
 }
 
 export default App;
