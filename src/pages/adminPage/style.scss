@@ -1,0 +1,16 @@
+.main {
+  height: 100vh;
+}
+
+.title {
+    margin-bottom: 1rem;
+  font-size: 22px;
+  font-weight: 600;
+  span {
+    color: red;
+  }
+}
+.flex_div {
+  display: flex;
+  gap: 1rem;
+}

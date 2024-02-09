@@ -1,8 +1,15 @@
 import "./style.scss";
 import Rating from "@mui/material/Rating";
-const Card = () => {
+import { Card } from "@mui/material";
+import { useNavigate } from "react-router-dom";
+const ProductCard = () => {
+  const colors = ["#636363", "green", "#E7E5E3"];
+  const navigate: any = useNavigate();
+  const handleClick = () => {
+    navigate("/details");
+  };
   return (
-    <div className="Card">
+    <Card className="Card" onClick={handleClick}>
       <div className="Card-img">
         <img
           height={"100%"}
@@ -13,19 +20,24 @@ const Card = () => {
       <div className="discription">
         Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ad, sequi.
       </div>
-      <Rating name="read-only" value={2} readOnly />
+      <Rating
+        name="read-only"
+        style={{ color: "#636363" }}
+        value={2}
+        readOnly
+      />
       <div className="flexDiv">
         Colors:
-        {Array.from({ length: 3 }, () => (
-          <div className="colors"></div>
+        {colors.map((item) => (
+          <div className="colors" style={{ background: item }}></div>
         ))}
       </div>
       <div className="price">
         PKR:400$
         <span className="previous-price">PKR:600$</span>
       </div>
-    </div>
+    </Card>
   );
 };
 
-export default Card;
+export default ProductCard;

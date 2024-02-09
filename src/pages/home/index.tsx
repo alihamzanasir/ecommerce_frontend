@@ -1,11 +1,9 @@
 import "./style.scss";
 import Header from "../../componenets/@commonComponent/header";
 import homeImage from "../../assets/images/arrangement-black-friday-shopping-carts-with-copy-space.jpg";
-import Categories from "./categories";
-import Card from "../../componenets/@commonComponent/card";
-import Grid from "@mui/material/Grid";
-import Box from "@mui/material/Box";
-
+import Footer from "../../componenets/@commonComponent/footer";
+import MostViwedProducts from "./mostViwedProducts";
+import Slider from "../../componenets/@commonComponent/slider";
 const Home = () => {
   const categories = [
     "Groceries & Pets",
@@ -19,7 +17,6 @@ const Home = () => {
 
   return (
     <div>
-      <Header />
       <div style={{ height: "600px" }}>
         <img src={homeImage} height={"100%"} width={"100%"} alt="please wait" />
       </div>
@@ -29,12 +26,21 @@ const Home = () => {
           <div className="categories-item">{item}</div>
         ))}
       </div>
-      <div className="card_section">
-        {Array.from({ length: 20 }, () => (
-          <div>
-            <Card />
-          </div>
-        ))}
+      {/* <div className="card_section"> */}
+
+      {/* </div> */}
+      <MostViwedProducts />
+      <div
+        style={{
+          marginBottom: "2rem",
+          marginLeft: "6rem",
+          marginRight: "6rem",
+        }}
+      >
+        <div className="title">
+          Popular <span>Products</span>
+        </div>
+        <Slider />
       </div>
     </div>
   );

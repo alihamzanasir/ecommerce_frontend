@@ -2,16 +2,14 @@
   height: 420px;
   background: #ffffff;
   border: 1px solid #e9e9e9;
-  width: fit-content;
   padding: 20px;
-  border-radius: 20px;
   &:hover {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   }
 
   .Card-img {
     height: 300px;
-    width: 300px;
+    width: 100%;
     img {
       border-radius: 20px;
     }
@@ -19,7 +17,7 @@
   .discription {
     font-size: 18px;
     margin-top: 0.4rem;
-    width: 290px;
+    // width: 290px;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
@@ -34,7 +32,7 @@
     display: block;
     width: fit-content;
     margin: 1rem 0px 0px auto;
-    color: rgb(231, 47, 47);
+    color: #636363;;
     margin-bottom: 0.5rem;
   }
   .flexDiv {
@@ -55,6 +53,6 @@
     margin-left: 2px;
     text-decoration: line-through;
     font-size: 14px;
-    color: rgb(177, 78, 78);
+    color: #636363;
   }
 }

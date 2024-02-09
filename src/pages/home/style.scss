@@ -7,6 +7,21 @@
   }
 }
 
+.title {
+  font-size: 25px;
+  font-weight: 600;
+  color: black;
+  text-align: center;
+  margin: 4rem 0px 3rem 0px;
+  span {
+    color: red;
+  }
+}
+.viwed_prducts {
+  margin-left: 6rem;
+  margin-right: 6rem;
+  margin-bottom: 3rem;
+}
 ///////////////// categories style /////////////////
 .categories {
   display: flex;
@@ -14,6 +29,7 @@
   padding: 0px 2rem 0px 2rem;
   font-size: 18px;
   background: gray;
+  color: #ffffff;
 
   .categories-item {
     padding: 20px;

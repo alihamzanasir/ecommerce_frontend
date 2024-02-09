@@ -1,0 +1,57 @@
+.mainDiv {
+  background: #424242;
+  height: 200px;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+
+  padding: 2rem 2rem 0px 2rem;
+
+  .flex-1 {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .flexDiv {
+    display: flex;
+    justify-content: space-between;
+    width: 55%;
+  }
+
+  .title {
+    font-size: 20px;
+
+    font-weight: 500;
+    text-align: start;
+    margin: 0px ;
+    margin-bottom: 10px;
+  }
+
+  .copyright {
+    position: relative;
+  }
+
+  .search_bar_div {
+    margin-top: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 45px;
+    width: fit-content;
+    .input {
+      height: 100%;
+      outline: none;
+      border-radius: 0%;
+    }
+    .btn {
+      height: 100%;
+      border-radius: 0%;
+    }
+  }
+  .copyright_verify {
+    display: block;
+    width: fit-content;
+    margin: auto;
+  }
+}
