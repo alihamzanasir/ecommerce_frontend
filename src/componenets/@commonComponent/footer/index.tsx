@@ -43,16 +43,18 @@ const Footer = () => {
           <div className="search_bar_div">
             <CustomInput
               placeholder="Subscribe to our newsletter"
-              style={{ height: "43.5px", border: "none" }}
+              className={"input"}
             />
-            <CustomButton className="btn" text="Subscribe" />
+            <CustomButton
+              text="Subcribe"
+              style={{ width: "50%", height: "50px", borderRadius: "unset" }}
+            />
           </div>
         </div>
-        {/* <div className="copyright">
-        Copyright@ 2024 DOOGLE.ALL rights reserved.
-      </div> */}
       </div>
-      <div className="copyright_verify">Copyright@ 2018 DOOGEE.ALL right reserved.</div>
+      <div className="copyright_verify">
+        Copyright@ 2018 DOOGEE.ALL right reserved.
+      </div>
     </div>
   );
 };

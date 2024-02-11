@@ -1,12 +1,10 @@
 import React from "react";
+import InputBase from "@mui/material/InputBase";
+import { TextField } from "@mui/material";
 
 const CustomInput = (props: any) => {
   return (
-    <input
-      style={{ height: "40px", width: "100%" }}
-      className="custom_input"
-      {...props}
-    />
+    <TextField style={{ width: "100%" }} className="custom_input" {...props} />
   );
 };
 

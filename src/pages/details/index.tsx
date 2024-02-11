@@ -23,7 +23,7 @@ const Details = () => {
     setOpen(true);
   };
   return (
-    <>
+    <div className="main_detail_page">
       <Box>
         <Grid container columns={24}>
           <Grid xl={16} md={16} className="img_details">
@@ -188,11 +188,11 @@ const Details = () => {
         open={open}
         setOpen={setOpen}
       />
-      <div className="title">
+      <div className="title" style={{ marginTop: "2rem" }}>
         Popular <span>Products</span>
       </div>
       <Slider />
-    </>
+    </div>
   );
 };
 

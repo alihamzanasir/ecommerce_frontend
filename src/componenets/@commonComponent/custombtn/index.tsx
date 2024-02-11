@@ -1,5 +1,5 @@
 import Button, { ButtonProps } from "@mui/material/Button";
-import "./style.scss"
+import "./style.scss";
 
 interface TypeCheck extends ButtonProps {
   text: string;

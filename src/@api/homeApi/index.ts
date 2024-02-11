@@ -12,7 +12,7 @@ class homeApi extends baseAPi {
   }
 
   fetchUserById = createAsyncThunk("fetchUserById", async () => {
-    const { data } = await this.axios(`posts`);
+    const { data } = await this.axios("posts");
     return data;
   });
 }
