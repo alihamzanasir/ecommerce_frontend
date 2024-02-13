@@ -12,9 +12,7 @@ const categories = [
 const Categories = () => {
   return (
     <div className="categories">
-      {categories?.map((item) => (
-        <div className="categories-item">{item}</div>
-      ))}
+      {categories?.map((item) => <div className="categories-item">{item}</div>)}
     </div>
   );
 };

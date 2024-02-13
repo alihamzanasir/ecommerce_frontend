@@ -1,6 +1,12 @@
+* {
+  scroll-behavior: smooth;
+}
+
+.viewed_categories {
+  margin: 4rem 6rem 3rem 6rem;
+}
 .main {
   display: flex;
-  background: #b76dca;
   .img-container {
     width: 60%;
     height: 700px;
@@ -12,16 +18,30 @@
   font-weight: 600;
   color: black;
   text-align: center;
-  margin: 4rem 0px 3rem 0px;
+
   span {
     color: red;
   }
 }
-.viwed_prducts {
-  margin-left: 6rem;
-  margin-right: 6rem;
-  margin-bottom: 3rem;
+
+.back_image {
+  margin-bottom: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 400px;
+  width: 100% !important;
+  background-image: url(https://img.freepik.com/free-photo/small-grocery-cart-with-gift-boxes-laptop_23-2147950562.jpg?w=740&t=st=1707640627~exp=1707641227~hmac=7f683100cbbb8f7ff527a4dc743115b98fa4f5e11419f2edf94cfb0097fe17c3);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover; /* Ensure the background image covers the full width */
 }
+
+.side_card_feature_product {
+  height: 1000px;
+  overflow: auto;
+}
+
 ///////////////// categories style /////////////////
 .categories {
   display: flex;
@@ -43,4 +63,27 @@
 .card_section {
   display: flex;
   flex-wrap: wrap;
+}
+
+.scrollNone {
+  display: none;
+}
+.scrollToTop {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f5f5f5;
+  color: black;
+  position: fixed;
+  bottom: 80px;
+  right: 30px;
+  font-size: 25px;
+  border-radius: 50%;
+  height: 60px;
+  width: 60px;
+  box-shadow:
+    0 4px 8px 0 rgba(0, 0, 0, 0.2),
+    0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  z-index: 999;
+  cursor: pointer;
 }

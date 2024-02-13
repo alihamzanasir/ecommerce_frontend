@@ -2,11 +2,10 @@ import axios, { AxiosRequestConfig } from "axios";
 import { get_Token } from "../componenets/utils";
 
 export async function axiosCall(baseApi: string, method: any, payload?: any) {
-    const CancelToken = axios.CancelToken;
-    const source = CancelToken.source();
+  const CancelToken = axios.CancelToken;
+  const source = CancelToken.source();
   const instance: any = axios.create({
     baseURL: baseApi,
-
   });
 
   instance.interceptors.request.use(
@@ -21,7 +20,6 @@ export async function axiosCall(baseApi: string, method: any, payload?: any) {
       return Promise.reject(error);
     }
   );
-
 
   const resp = await instance[method](payload);
   return resp;

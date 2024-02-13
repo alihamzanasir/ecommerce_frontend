@@ -19,7 +19,7 @@ export default function MultiActionAreaCard({
     <Card sx={{ maxWidth: 345 }}>
       <CardActionArea>
         <CardMedia
-          component='img'
+          component="img"
           height="140"
           image={image}
           alt="green iguana"

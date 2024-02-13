@@ -9,7 +9,7 @@ interface TypeCheck {
 const PublicPages = () => {
   return (
     <Routes>
-       <Route path="/" element={<Navigate to="/home" />} />
+      <Route path="/" element={<Navigate to="/home" />} />
       {publicPath.map(({ path, Element }: TypeCheck, index) => (
         <Route key={index} path={path} element={<Element />} />
       ))}

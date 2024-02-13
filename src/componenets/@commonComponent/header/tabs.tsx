@@ -1,48 +1,31 @@
-import Tabs from "@mui/joy/Tabs";
-import TabList from "@mui/joy/TabList";
-import Tab, { tabClasses } from "@mui/joy/Tab";
+import * as React from "react";
+import Tabs from "@mui/material/Tabs";
+import Tab from "@mui/material/Tab";
+import Box from "@mui/material/Box";
 
-export default function TabsPricingExample() {
+export default function ColorTabs() {
+  const [value, setValue] = React.useState("one");
+
+  const handleChange = (event: React.SyntheticEvent, newValue: string) => {
+    setValue(newValue);
+  };
+
   return (
-    <Tabs
-      variant="outlined"
-      aria-label="Pricing plan"
-      defaultValue={0}
-      sx={{
-        width: 343,
-        boxShadow: "sm",
-        overflow: "auto",
-        bgcolor: "unset",
-      }}
-    >
-      <TabList
-        disableUnderline
-        tabFlex={1}
-        sx={{
-          bgcolor: "unset",
-          [`& .${tabClasses.root}`]: {
-            fontSize: "16px",
-            fontWeight: "lg",
-            [`&[aria-selected="true"]`]: {
-              color: "primary.500",
-              bgcolor: "background.surface",
-            },
-            [`&.${tabClasses.focusVisible}`]: {
-              outlineOffset: "-4px",
-            },
-          },
-        }}
-      >
-        <Tab disableIndicator variant="soft" sx={{ flexGrow: 1 }}>
-          Community
-        </Tab>
-        <Tab disableIndicator variant="soft" sx={{ flexGrow: 1 }}>
-          Pro
-        </Tab>
-        <Tab disableIndicator variant="soft" sx={{ flexGrow: 1 }}>
-          Premium
-        </Tab>
-      </TabList>
-    </Tabs>
+    <Box sx={{ width: "100%" }}>
+      <Tabs>
+        <Tab
+          label="Home"
+          sx={{ color: "White", fontSize: "18px", fontWeight: "500" }}
+        />
+        <Tab
+          label="About"
+          sx={{ color: "White", fontSize: "18px", fontWeight: "500" }}
+        />
+        <Tab
+          label="Contact Us"
+          sx={{ color: "White", fontSize: "18px", fontWeight: "500" }}
+        />
+      </Tabs>
+    </Box>
   );
 }

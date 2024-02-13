@@ -1,21 +1,14 @@
-import CustomButton from "../custombtn";
-import CustomInput from "../customInput";
 import "./style.scss";
 import { MdShoppingCart } from "react-icons/md";
 import BasicMenu from "./menu";
 import logoImage from "../../../assets/images/22116291_christmas_2012_new_276-removebg-preview.png";
-import MTextFied from "../../textField";
 import { Link } from "react-router-dom";
 import SearchIcon from "@mui/icons-material/Search";
 import { styled, alpha } from "@mui/material/styles";
 import InputBase from "@mui/material/InputBase";
 import CustomTabs from "./tabs";
 
-{
-  /* <MdShoppingCart /> */
-}
-
-const Search = styled("div")(({ theme }:any ) => ({
+const Search = styled("div")(({ theme }: any) => ({
   position: "relative",
   borderRadius: theme.shape.borderRadius,
   backgroundColor: alpha(theme.palette.common.white, 0.15),
@@ -30,7 +23,7 @@ const Search = styled("div")(({ theme }:any ) => ({
   },
 }));
 
-const SearchIconWrapper = styled("div")(({ theme }:any) => ({
+const SearchIconWrapper = styled("div")(({ theme }: any) => ({
   padding: theme.spacing(0, 2),
   height: "100%",
   position: "absolute",
@@ -39,12 +32,11 @@ const SearchIconWrapper = styled("div")(({ theme }:any) => ({
   alignItems: "center",
   justifyContent: "center",
 }));
-const StyledInputBase = styled(InputBase)(({ theme }:any) => ({
+const StyledInputBase = styled(InputBase)(({ theme }: any) => ({
   color: "inherit",
   width: "100%",
   "& .MuiInputBase-input": {
     padding: theme.spacing(1, 1, 1, 0),
-    // vertical padding + font size from searchIcon
     paddingLeft: `calc(1em + ${theme.spacing(4)})`,
     transition: theme.transitions.create("width"),
     [theme.breakpoints.up("sm")]: {
@@ -79,13 +71,11 @@ const Header = () => {
           </Search>
         </div>
         <div>
-          
-          {/* <span>signin | signUp</span> */}
           <BasicMenu />
         </div>
-        <span>
+        <Link to={"/cart"} style={{ color: "unset", marginTop: "8px" }}>
           <MdShoppingCart />
-        </span>
+        </Link>
       </div>
     </div>
   );

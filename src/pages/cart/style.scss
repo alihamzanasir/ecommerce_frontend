@@ -1,0 +1,90 @@
+.main_cart_page {
+  margin: 8rem 3rem 4rem 3rem;
+}
+.all_delete_item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+  height: 60px;
+  padding: 0px 1rem 0px 1rem;
+  div {
+    font-size: 20px;
+    font-weight: 600;
+  }
+}
+.table {
+  .css-1ndpvdd-MuiTableCell-root {
+    font-size: 20px;
+    font-weight: 600;
+  }
+  .css-1ygcj2i-MuiTableCell-root {
+    font-size: 20px;
+    font-weight: 600;
+  }
+}
+
+.increase_decrease {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  .btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #eff0f5;
+    height: 40px;
+    width: 40px;
+    font-size: 20px;
+    cursor: pointer;
+    &:hover {
+      background: #dadada;
+      color: #6a6a6a;
+    }
+  }
+}
+
+.summaryCard {
+  height: 320px;
+  padding: 1rem;
+  .summary {
+    font-size: 30px;
+    font-weight: 600;
+  }
+  .flex_div {
+    margin-top: 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    div {
+      font-size: 20px;
+      font-weight: 600;
+    }
+    .subTotal_price {
+      font-size: 18px;
+    }
+  }
+}
+
+.paymet_card {
+  height: 200px;
+  margin-top: 2rem;
+  padding: 1rem;
+  .payment_method {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 1rem;
+  }
+  .payment_txt {
+    font-size: 30px;
+    font-weight: 600;
+  }
+  .protect_payment {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 20px;
+    margin-top: 10px;
+  }
+}

@@ -27,7 +27,7 @@ function Slider() {
             width: 30,
             marginLeft: "1rem",
           },
-          children: <span>{`>`}</span>,
+          children: <span>{">"}</span>,
         }}
         backwardBtnProps={{
           //here you can also pass className, or any other button element attributes
@@ -45,7 +45,7 @@ function Slider() {
             width: 30,
             marginRight: "1rem",
           },
-          children: <span>{`<`}</span>,
+          children: <span>{"<"}</span>,
         }}
         responsiveProps={[
           {
