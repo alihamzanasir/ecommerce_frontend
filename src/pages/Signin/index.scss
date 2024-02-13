@@ -1,0 +1,61 @@
+
+%message-display {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.box {
+  font-family: 'Montserrat', sans-serif;
+  font-family: 'Poppins', sans-serif;
+  height: 100vh;
+  // margin: 1rem;
+  @extend %message-display;
+}
+.box1{
+  // border: 1px solid black;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  border-radius: .5rem;
+  padding: 2rem;
+  background-color: white
+}
+.card {
+  @extend %message-display;
+  flex-direction: column;
+  h1{
+    color: orangered;
+  }
+}
+.password-input {
+  border: 1px solid gray;
+  border-radius: 5px;
+  input {
+    font-size: 1rem;
+    height: 3rem;
+    width: 18rem;
+    outline: none;
+    border: none;
+    margin-right: 2px;
+  }
+}
+.btn {
+  @extend %message-display;
+  flex-direction: column;
+  button {
+    width: 21rem;
+    height: 3rem;
+    font-size: 1.2rem;
+    font-weight: 900;
+    border-radius: 5px;
+    border: none;
+    border: 1px solid gray;
+    color: orangered;
+  }
+  button:active {
+    transform: scale(0.98);
+  }
+  
+  button:focus {
+    outline: none;
+  }
+
+}
