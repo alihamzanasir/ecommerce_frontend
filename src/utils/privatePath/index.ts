@@ -6,6 +6,7 @@ import Cart from "../../pages/cart";
 import Checkout from "../../pages/checkout";
 import Profile from "../../pages/profile";
 import AdminPage from "../../pages/adminPage";
+
 interface typeCheck {
   path: string;
   Element: React.ComponentType<any>;

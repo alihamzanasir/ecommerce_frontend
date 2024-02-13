@@ -15,7 +15,7 @@ import CustomTabs from "./tabs";
   /* <MdShoppingCart /> */
 }
 
-const Search = styled("div")(({ theme }) => ({
+const Search = styled("div")(({ theme }:any ) => ({
   position: "relative",
   borderRadius: theme.shape.borderRadius,
   backgroundColor: alpha(theme.palette.common.white, 0.15),
@@ -30,7 +30,7 @@ const Search = styled("div")(({ theme }) => ({
   },
 }));
 
-const SearchIconWrapper = styled("div")(({ theme }) => ({
+const SearchIconWrapper = styled("div")(({ theme }:any) => ({
   padding: theme.spacing(0, 2),
   height: "100%",
   position: "absolute",
@@ -39,7 +39,7 @@ const SearchIconWrapper = styled("div")(({ theme }) => ({
   alignItems: "center",
   justifyContent: "center",
 }));
-const StyledInputBase = styled(InputBase)(({ theme }) => ({
+const StyledInputBase = styled(InputBase)(({ theme }:any) => ({
   color: "inherit",
   width: "100%",
   "& .MuiInputBase-input": {
@@ -79,6 +79,7 @@ const Header = () => {
           </Search>
         </div>
         <div>
+          
           {/* <span>signin | signUp</span> */}
           <BasicMenu />
         </div>
