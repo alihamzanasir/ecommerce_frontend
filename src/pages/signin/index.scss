@@ -1,27 +1,26 @@
-
 %message-display {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 .box {
-  font-family: 'Montserrat', sans-serif;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Montserrat", sans-serif;
+  font-family: "Poppins", sans-serif;
   height: 100vh;
   // margin: 1rem;
   @extend %message-display;
 }
-.box1{
+.box1 {
   // border: 1px solid black;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-  border-radius: .5rem;
+  border-radius: 0.5rem;
   padding: 2rem;
-  background-color: white
+  background-color: white;
 }
 .card {
   @extend %message-display;
   flex-direction: column;
-  h1{
+  h1 {
     color: orangered;
   }
 }
@@ -53,9 +52,8 @@
   button:active {
     transform: scale(0.98);
   }
-  
+
   button:focus {
     outline: none;
   }
-
 }

@@ -30,7 +30,7 @@ const style = {
   bgcolor: "background.paper",
   border: "2px solid gray",
   boxShadow: 24,
-  borderRadius: '16px',
+  borderRadius: "16px",
   p: 4,
 };
 

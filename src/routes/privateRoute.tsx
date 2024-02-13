@@ -1,7 +1,7 @@
-import { useEffect } from "react";
 import Error from "../pages/404Page";
 import { privatePath } from "../utils/privatePath";
-import { Routes, Route, Navigate, useLocation } from "react-router-dom";
+import { Routes, Route, Navigate } from "react-router-dom";
+import { ScrollToTopOnRouteChange } from "../utils";
 
 interface TypeCheck {
   path: string;
@@ -9,20 +9,18 @@ interface TypeCheck {
 }
 
 export const PrivatePages = () => {
-  const location = useLocation();
-
-  useEffect(() => {
-    window.scrollTo(0, 0);
-  }, [location.pathname]);
   return (
-    <Routes>
-      <Route path="/" element={<Navigate to="/home" />} />
+    <>
+      <ScrollToTopOnRouteChange />
+      <Routes>
+        <Route path="/" element={<Navigate to="/home" />} />
 
-      {privatePath.map(({ path, Element }: TypeCheck, index) => (
-        <Route key={index} path={path} element={<Element />} />
-      ))}
+        {privatePath.map(({ path, Element }: TypeCheck, index) => (
+          <Route key={index} path={path} element={<Element />} />
+        ))}
 
-      <Route path="*" element={<Error />} />
-    </Routes>
+        <Route path="*" element={<Error />} />
+      </Routes>
+    </>
   );
 };

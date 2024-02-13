@@ -14,7 +14,7 @@ class baseAPi {
 
     axios.interceptors.response.use(
       (resp: AxiosResponse) => resp,
-      (error: AxiosError) => this.HandleResponseError(error)
+      (error: AxiosError) => this.HandleResponseError(error),
     );
 
     // axios.defaults.baseURL = "https://jsonplaceholder.typicode.com/";
