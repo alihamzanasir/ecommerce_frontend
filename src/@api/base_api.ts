@@ -18,7 +18,7 @@ export async function axiosCall(baseApi: string, method: any, payload?: any) {
     },
     function (error: any) {
       return Promise.reject(error);
-    }
+    },
   );
 
   const resp = await instance[method](payload);

@@ -12,7 +12,7 @@ interface TypeCheck {
 const CustomAlert = ({ vertical, horizontal, open, setOpen }: TypeCheck) => {
   const handleClose = (
     event: React.SyntheticEvent | Event,
-    reason?: string
+    reason?: string,
   ) => {
     if (reason === "clickaway") {
       return;

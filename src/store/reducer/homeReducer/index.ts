@@ -7,10 +7,10 @@ export const fetchUserById = createAsyncThunk(
   "homeApi/fetchUserById",
   async () => {
     const { data } = await axios.get(
-      "https://jsonplaceholder.typicode.com/posts"
+      "https://jsonplaceholder.typicode.com/posts",
     );
     return data;
-  }
+  },
 );
 
 const homeReducer = createSlice({
