@@ -39,14 +39,7 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject",
-    "lint": "eslint --fix --ext .ts,.tsx src",
-    "pre-commit": "lint-staged  --allow-empty",
-    "prepare": "husky install"
-  },
-  "lint-staged": {
-    "src/**/*.(ts|tsx)": "eslint --fix --ext .ts,.tsx src",
-    "src/**/*.{css,scss}": "prettier src/**/*.css src/**/*.scss --check --write"
+    "eject": "react-scripts eject"
   },
   "eslintConfig": {
     "extends": [
@@ -67,9 +60,6 @@
     ]
   },
   "devDependencies": {
-    "eslint": "^8.56.0",
-    "husky": "^9.0.10",
-    "lint-staged": "^15.2.2",
     "prettier": "3.2.5"
   }
 }
