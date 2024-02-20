@@ -6,6 +6,7 @@ import Cart from "../../pages/cart";
 import Checkout from "../../pages/checkout";
 import Profile from "../../pages/profile";
 import AdminPage from "../../pages/adminPage";
+import Simple from "../../simple";
 
 interface typeCheck {
   path: string;
@@ -13,7 +14,7 @@ interface typeCheck {
 }
 
 export const privatePath: typeCheck[] = [
-  { path: "/home", Element: Home },
+  { path: "/home", Element: Simple },
   { path: "/AdminPage", Element: AdminPage },
   { path: "/about", Element: About },
   { path: "/details", Element: Details },
