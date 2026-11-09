@@ -9,9 +9,7 @@ export const DefaultLayout = withAuthentication(() => {
 
   return (
     <div>
-      {/* <Header /> */}
       {adminAccess ? <PrivatePages /> : <PublicPages />}
-      {/* <Footer /> */}
     </div>
   );
 });
